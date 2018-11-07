@@ -23,7 +23,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      output: outPath
+      output: outPath,
+      template: path.join(__dirname, 'index-webpack.html')
     }),
   ],
 };
