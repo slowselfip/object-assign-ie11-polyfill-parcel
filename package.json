@@ -1,0 +1,23 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "Object assign polyfill example",
+  "main": "./src/index.html",
+  "scripts": {
+    "build:webpack": "npm run clean && webpack --mode production",
+    "build:parcel": "npm run clean && parcel build $npm_package_main",
+    "clean": "rimraf dist/"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "html-webpack-plugin": "^3.2.0",
+    "parcel-bundler": "^1.10.3",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
