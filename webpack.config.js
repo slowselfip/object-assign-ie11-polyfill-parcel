@@ -19,11 +19,11 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: outPath,
+    publicPath: './'
   },
   plugins: [
     new HtmlWebpackPlugin({
-      output: outPath,
-      template: path.join(__dirname, 'src/index.html'),
+      output: outPath
     }),
   ],
 };
